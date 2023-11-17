@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    
+    int result = 0;
+    
+    int user_input = printf("Enter till you want to add: ");
+    scanf("%d", &user_input);
+    
+    for (int i = 0; i <= user_input; i ++){
+        result = result + i;
+    }
+    printf("Sum of N numbers entered by User: %d", result);
+
+    return 0;
+}
