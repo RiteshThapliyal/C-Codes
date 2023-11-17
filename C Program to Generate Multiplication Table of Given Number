@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    
+    int user_input = printf("Enter the Number of Table you Want: ");
+    scanf("%d", &user_input);
+    
+    for (int i = 1; i <= 10; i ++){
+        printf("%d * %d = %d \n", user_input, i, user_input * i);
+    }
+
+    return 0;
+}
