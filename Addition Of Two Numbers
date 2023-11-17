@@ -1,3 +1,5 @@
+// first Method - Aam Jindegi
+
 int a = printf("Enter first number: \n");
 
 int b = printf("Enter second number: \n");
@@ -5,3 +7,35 @@ int b = printf("Enter second number: \n");
 scanf("%d %d", &a, &b);
 
 printf("Addition of a and b is %d", a + b);
+
+
+// second Method - Pro coder
+
+int first = printf("Enter First Number: ");
+scanf("%d", &first);
+
+int second = printf("Enter Second Number: ");
+scanf("%d", &second);
+
+printf("Addition of Entered Two Numbers: %d", first + second);
+
+
+// third Method - Hacker
+
+void sum();  // prototype declaration
+
+int main() {
+    // Write C code here
+    sum();
+
+    return 0;
+}
+
+void sum(){
+    int first = printf("Enter first value: ");
+    scanf("%d", &first);
+    int second = printf("Enter second value: ");
+    scanf("%d", &second);
+    int result = first + second;
+    printf("Addition of given number is: %d", result);
+}
