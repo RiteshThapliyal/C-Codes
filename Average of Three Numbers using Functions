@@ -1,0 +1,23 @@
+#include <stdio.h>
+void average();
+
+int main() {
+    
+    average();
+
+    return 0;
+}
+
+void average(){
+    float first = printf("Enter first number: ");
+    scanf("%f", &first);
+    
+    float second = printf("Enter second number: ");
+    scanf("%f", &second);
+    
+    float third = printf("Enter third number: ");
+    scanf("%f", &third);
+    
+    float result = (float)(first + second + third) / 3 ;
+    printf("Average of '%.f, %.f, %.f' is: %.1f",first, second, third, result);
+}
