@@ -1,0 +1,29 @@
+// Arm Strong Number for three digit number.
+
+#include <stdio.h>
+
+int main()
+{
+    int num, rem, check = 0, storage;
+    printf("Enter Three Digit Number: ");
+    scanf("%d", &num);
+
+    storage = num;
+
+    while (num > 0)
+    {
+        rem = num % 10;
+        check = check + (rem * rem * rem);
+        num = num / 10;
+    }
+    if (storage == check)
+    {
+        printf("Entered Number is ArmStrong Number.\n");
+    }
+    else
+    {
+        printf("Entered Number is not ArmStrong Number.\n");
+    }
+    
+    return 0;
+}
