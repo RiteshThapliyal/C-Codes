@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+
+    int num = printf("Enter the Number: ");
+    scanf("%d", &num);
+
+    for (int row = 1; row <= num; row++)
+    {
+        for (int col = 1; col <= num; col++)
+        {
+            if (col < row)
+            {
+                printf("  ");
+            }
+            else
+            {
+                printf("* ");
+            }
+        }
+        printf("\n");
+    }
+
+}
+
